@@ -94,6 +94,12 @@ p {
 
 }
 
+.introducao-cover img {
+    object-fit: cover;
+    height: 100%;
+
+}
+
 .botao {
     background: #ee2211;
     color: #fff;
@@ -157,4 +163,49 @@ p {
     color: #ee2211;
    
     
+}
+
+
+@media (max-width: 1000px) {
+    .conteudo-vantagens{
+        grid-template-columns: 1fr;
+    }
+    .subtitulo {
+        text-align: center;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+    .introducao::before {
+        display: none;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+    
+    .header {
+        gap: 30px;
+    }
+
+    .introducao {
+        justify-items: start;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    body {
+        gap: 30px;
+    }
+
+
 }
